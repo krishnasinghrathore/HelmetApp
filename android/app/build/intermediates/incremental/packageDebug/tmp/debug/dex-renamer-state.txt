@@ -1,0 +1,4 @@
+#Sun May 10 04:10:49 IST 2020
+base.0=/Users/apple/Projects/Helmet App/Helmet/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,6 @@
+export const LOGIN_BACKGROUND = "#212121";
+export const TEXT_INPUT_SEPARATOR_COLOR = "#757575"
+export const SIGN_UP_TEXT_COLOR = "#F6F6F6"
+export const FORGET_PASSWORD_TEXT_COLOR = "#757575"
+export const WHITE_TEXT_COLOR = "#FFFFFF"
+export const LOCHINVAR_COLOR = "#268C82"
