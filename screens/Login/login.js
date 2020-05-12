@@ -21,6 +21,7 @@ import {
 import { IMG_LOGO, IMG_FB, IMG_ARROW, IMG_AT_SYMBOL, IMG_LOCK, IMG_EYE_SHOW } from '../../assets/image/imgConst';
 import { loginStyle } from "./loginStyle";
 import { Actions } from 'react-native-router-flux';
+import { HMTextInput } from '../Component/CommonComponent/commonComponent';
 
 
 export default class login extends React.Component {
@@ -33,24 +34,14 @@ export default class login extends React.Component {
                         <Image style={loginStyle.logo} source={IMG_LOGO} />
                     </View>
 
-                    <View style={loginStyle.inputContainerStyle}>
-                        <View style={loginStyle.textInputStyle}>
-                            <Image style={loginStyle.emailLogoStyle} resizeMode="contain" source={IMG_AT_SYMBOL} />
-                            <TextInput style={loginStyle.textInputStyle} placeholderTextColor="#757575" placeholder={'Email'} />
-                        </View>
-                        <View style={loginStyle.separatorStyle} />
-                    </View>
+                    <HMTextInput
+                        placeholder={"Email"}
+                        imageHolder={IMG_AT_SYMBOL} />
 
-                    <View style={[loginStyle.inputContainerStyle, { marginTop: 20 }]}>
-                        <View style={loginStyle.textInputStyle}>
-                            <Image style={loginStyle.emailLogoStyle} resizeMode="contain" source={IMG_LOCK} />
-                            <TextInput style={loginStyle.textInputStyle} placeholderTextColor="#757575" placeholder={'Password'} secureTextEntry={true} />
-                            <TouchableOpacity>
-                                <Image style={loginStyle.emailLogoStyle} resizeMode="contain" source={IMG_EYE_SHOW} />
-                            </TouchableOpacity>
-                        </View>
-                        <View style={loginStyle.separatorStyle} />
-                    </View>
+                    <HMTextInput
+                        secureText={true}
+                        placeholder={"Password"}
+                        imageHolder={IMG_AT_SYMBOL} />
 
                     <View style={loginStyle.forgetPasswordContainer}>
                         <TouchableOpacity style={loginStyle.forgetPasswordButtonStyle}>

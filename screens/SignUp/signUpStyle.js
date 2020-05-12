@@ -1,6 +1,9 @@
 import { StyleSheet } from "react-native";
 
 export const signUpStyle = StyleSheet.create({
+  textInputContainer: {
+    marginTop: 20,
+  },
   arrowImageStyle: {
     marginLeft: 20,
     alignSelf: "center",
