@@ -12,13 +12,12 @@ import {
   Text,
   ScrollView,
   Image,
-  TextInput,
   TouchableOpacity,
 } from 'react-native';
 import { signUpStyle } from "./signUpStyle";
 import { IMG_LOGO, IMG_AT_SYMBOL, IMG_LOCK, IMG_EYE_SHOW, IMG_ARROW, IMG_USER } from '../../assets/image/imgConst';
 import { Actions } from 'react-native-router-flux';
-import { HMTextInput } from "../Component/CommonComponent/commonComponent";
+import { HMTextInput, HMButton } from "../Component/CommonComponent/commonComponent";
 
 export default class signup extends React.Component {
   render() {
@@ -53,12 +52,7 @@ export default class signup extends React.Component {
               imageHolder={IMG_LOCK} />
           </View>
 
-          <View style={signUpStyle.signUpContainerStyle}>
-            <TouchableOpacity style={signUpStyle.signUpButtonTextContainer}>
-              <Text style={signUpStyle.signUpButtonText}>SIGN UP</Text>
-              <Image source={IMG_ARROW} style={signUpStyle.arrowImageStyle} />
-            </TouchableOpacity>
-          </View>
+          <HMButton title={"SIGN UP"} displayImage={true} />
 
           <View style={signUpStyle.dontHaveAccountContainerStyle}>
             <Text style={signUpStyle.forgetPasswordTextStyle}>Already a member ? </Text>

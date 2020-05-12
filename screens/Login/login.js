@@ -21,7 +21,7 @@ import {
 import { IMG_LOGO, IMG_FB, IMG_ARROW, IMG_AT_SYMBOL, IMG_LOCK, IMG_EYE_SHOW } from '../../assets/image/imgConst';
 import { loginStyle } from "./loginStyle";
 import { Actions } from 'react-native-router-flux';
-import { HMTextInput } from '../Component/CommonComponent/commonComponent';
+import { HMTextInput, HMButton } from '../Component/CommonComponent/commonComponent';
 
 
 export default class login extends React.Component {
@@ -41,7 +41,7 @@ export default class login extends React.Component {
                     <HMTextInput
                         secureText={true}
                         placeholder={"Password"}
-                        imageHolder={IMG_AT_SYMBOL} />
+                        imageHolder={IMG_LOCK} />
 
                     <View style={loginStyle.forgetPasswordContainer}>
                         <TouchableOpacity style={loginStyle.forgetPasswordButtonStyle}>
@@ -49,12 +49,7 @@ export default class login extends React.Component {
                         </TouchableOpacity>
                     </View>
 
-                    <View style={loginStyle.signUpContainerStyle}>
-                        <TouchableOpacity style={loginStyle.signUpButtonTextContainer}>
-                            <Text style={loginStyle.signUpButtonText}>SIGN IN</Text>
-                            <Image source={IMG_ARROW} style={loginStyle.arrowImageStyle} />
-                        </TouchableOpacity>
-                    </View>
+                    <HMButton title={"SIGN IN"} displayImage={true} />
 
                     <View style={loginStyle.dontHaveAccountContainerStyle}>
                         <Text style={loginStyle.forgetPasswordTextStyle}>Don't have an account? </Text>

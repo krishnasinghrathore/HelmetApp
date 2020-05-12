@@ -12,9 +12,10 @@ import {
     View,
     Image,
     TextInput,
+    Text,
 } from 'react-native';
 import { HMTextInputStyle } from "./commonComponentStyle";
-import { IMG_USER, IMG_EYE_SHOW } from '../../../assets/image/imgConst';
+import { IMG_USER, IMG_EYE_SHOW, IMG_ARROW } from '../../../assets/image/imgConst';
 
 export const HMTextInput = (props) => {
     return (
@@ -34,6 +35,17 @@ export const HMTextInput = (props) => {
                 </TouchableOpacity>}
             </View>
             <View style={HMTextInputStyle.separatorStyle} />
+        </View>
+    );
+}
+
+export const HMButton = (props) => {
+    return (
+        <View style={HMTextInputStyle.signUpContainerStyle}>
+            <TouchableOpacity style={HMTextInputStyle.signUpButtonTextContainer}>
+                <Text style={HMTextInputStyle.signUpButtonText}>{props.title}</Text>
+                {props.displayImage && <Image source={IMG_ARROW} style={HMTextInputStyle.arrowImageStyle} />}
+            </TouchableOpacity>
         </View>
     );
 }
