@@ -14,6 +14,7 @@ import { Router, Scene } from 'react-native-router-flux';
 import login from './screens/Login/login';
 import signup from './screens/SignUp/signUp';
 import { LOGIN_BACKGROUND, WHITE_TEXT_COLOR } from './assets/app-color';
+import home from './screens/HomeScreen/home';
 
 export default App = () => {
   return (
@@ -23,6 +24,7 @@ export default App = () => {
       <Scene key="root">
         <Scene key="login" component={login} hideNavBar={true} initial></Scene>
         <Scene key="signup" component={signup} title="Sign Up"></Scene>
+        <Scene key="home" component={home} title="All Tasks"></Scene>
       </Scene>
     </ Router >
   );

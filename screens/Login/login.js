@@ -38,10 +38,12 @@ export default class login extends React.Component {
                         placeholder={"Email"}
                         imageHolder={IMG_AT_SYMBOL} />
 
-                    <HMTextInput
-                        secureText={true}
-                        placeholder={"Password"}
-                        imageHolder={IMG_LOCK} />
+                    <View style={{ marginTop: 30 }}>
+                        <HMTextInput
+                            secureText={true}
+                            placeholder={"Password"}
+                            imageHolder={IMG_LOCK} />
+                    </View>
 
                     <View style={loginStyle.forgetPasswordContainer}>
                         <TouchableOpacity style={loginStyle.forgetPasswordButtonStyle}>
@@ -49,7 +51,12 @@ export default class login extends React.Component {
                         </TouchableOpacity>
                     </View>
 
-                    <HMButton title={"SIGN IN"} displayImage={true} />
+                    <HMButton
+                        title={"SIGN IN"}
+                        displayImage={true}
+                        onPress={() =>
+                            Actions.home()}
+                    />
 
                     <View style={loginStyle.dontHaveAccountContainerStyle}>
                         <Text style={loginStyle.forgetPasswordTextStyle}>Don't have an account? </Text>

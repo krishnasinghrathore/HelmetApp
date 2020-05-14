@@ -25,7 +25,7 @@ export const HMTextInput = (props) => {
                     resizeMode="contain"
                     source={props.imageHolder || IMG_USER} />
                 <TextInput
-                    secureText={props.secureText || false}
+                    secureTextEntry={props.secureText || false}
                     style={HMTextInputStyle.textInputStyle}
                     placeholderTextColor="#757575"
                     placeholder={props.placeholder || ""} />
@@ -42,7 +42,9 @@ export const HMTextInput = (props) => {
 export const HMButton = (props) => {
     return (
         <View style={HMTextInputStyle.signUpContainerStyle}>
-            <TouchableOpacity style={HMTextInputStyle.signUpButtonTextContainer}>
+            <TouchableOpacity
+                style={HMTextInputStyle.signUpButtonTextContainer}
+                onPress={props.onPress}>
                 <Text style={HMTextInputStyle.signUpButtonText}>{props.title}</Text>
                 {props.displayImage && <Image source={IMG_ARROW} style={HMTextInputStyle.arrowImageStyle} />}
             </TouchableOpacity>
