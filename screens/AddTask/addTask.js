@@ -46,7 +46,7 @@ export default class addTask extends React.Component {
                     <HMButton
                         title={"ADD"}
                         displayImage={false}
-                        onPress={() => Actions.home()} />
+                        onPress={() => Actions.pop()} />
                 </ScrollView>
             </View>
         );
