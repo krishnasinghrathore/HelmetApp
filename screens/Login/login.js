@@ -46,7 +46,9 @@ export default class login extends React.Component {
                     </View>
 
                     <View style={loginStyle.forgetPasswordContainer}>
-                        <TouchableOpacity style={loginStyle.forgetPasswordButtonStyle}>
+                        <TouchableOpacity style={loginStyle.forgetPasswordButtonStyle}
+                            onPress={()=>Actions.forgotPassword()}
+                        >
                             <Text style={loginStyle.forgetPasswordTextStyle}>Forget Password?</Text>
                         </TouchableOpacity>
                     </View>

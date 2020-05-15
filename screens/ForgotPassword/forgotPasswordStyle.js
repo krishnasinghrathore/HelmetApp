@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
-import { LOGIN_BACKGROUND, SIGN_UP_TEXT_COLOR, TEXT_INPUT_SEPARATOR_COLOR, FORGET_PASSWORD_TEXT_COLOR, WHITE_TEXT_COLOR, LOCHINVAR_COLOR } from "../../../assets/app-color";
+import { FORGOT_PASSWORD_BACKGROUND, TEXT_SEPARATOR_STYLE, TEXT_INPUT_SEPARATOR_STYLE, SIGN_UP_TEXT_COLOR, TEXT_INPUT_SEPARATOR_COLOR, FORGET_PASSWORD_TEXT_COLOR, WHITE_TEXT_COLOR, LOCHINVAR_COLOR } from "../../assets/app-color";
 
-export const HMTextInputStyle = StyleSheet.create({
+export const forgotPasswordStyle = StyleSheet.create({
     inputContainerStyle: {
         height: 50,
         marginLeft: 20,
@@ -30,7 +30,7 @@ export const HMTextInputStyle = StyleSheet.create({
     container: {
         height: "100%",
         flex: 1,
-        backgroundColor: LOGIN_BACKGROUND
+        backgroundColor: FORGOTPASSWORD_BACKGROUND
     },
     scrollContainer: {
         flex: 1,
@@ -44,4 +44,3 @@ export const HMTextInputStyle = StyleSheet.create({
         flex: 1,
     },
 });
-
