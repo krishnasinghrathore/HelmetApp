@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { LOGIN_BACKGROUND, SIGN_UP_TEXT_COLOR, TEXT_INPUT_SEPARATOR_COLOR, FORGET_PASSWORD_TEXT_COLOR, WHITE_TEXT_COLOR, LOCHINVAR_COLOR } from "../../../assets/app-color";
+import { BACKGROUND_COLOR_BLACK_MAT, TEXT_INPUT_SEPARATOR_COLOR, WHITE_TEXT_COLOR, LOCHINVAR_COLOR } from "../../../assets/app-color";
 
 export const HMTextInputStyle = StyleSheet.create({
     inputContainerStyle: {
@@ -30,7 +30,7 @@ export const HMTextInputStyle = StyleSheet.create({
     container: {
         height: "100%",
         flex: 1,
-        backgroundColor: LOGIN_BACKGROUND
+        backgroundColor: BACKGROUND_COLOR_BLACK_MAT
     },
     scrollContainer: {
         flex: 1,
@@ -43,5 +43,38 @@ export const HMTextInputStyle = StyleSheet.create({
     imageView: {
         flex: 1,
     },
+    signUpContainerStyle: {
+        height: 40,
+        borderRadius: 20,
+        backgroundColor: LOCHINVAR_COLOR,
+        marginLeft: 20,
+        marginRight: 20,
+        marginTop: 40,
+    },
+    signUpButtonTextContainer: {
+        flex: 1,
+        flexDirection: "row",
+        justifyContent: "center"
+    },
+    signUpButtonText: {
+        alignSelf: "center",
+        fontSize: 18,
+        color: WHITE_TEXT_COLOR,
+    },
+    arrowImageStyle: {
+        marginLeft: 20,
+        alignSelf: "center",
+    },
+    radioImgContainerStyle: {
+        height: 60,
+        width: 40,
+        justifyContent: "center"
+    },
+    radioTitleStyle: {
+        alignSelf: "center",
+    },
+    radioImageStyle: {
+        alignSelf: "center"
+    }
 });
 

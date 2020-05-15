@@ -8,21 +8,16 @@
 
 import React from 'react';
 import {
-    SafeAreaView,
-    StyleSheet,
     ScrollView,
     View,
     Text,
     Image,
-    TextInput,
-    StatusBar,
     TouchableOpacity,
 } from 'react-native';
-import { IMG_LOGO, IMG_FB, IMG_ARROW, IMG_AT_SYMBOL, IMG_LOCK, IMG_EYE_SHOW } from '../../assets/image/imgConst';
+import { IMG_LOGO, IMG_AT_SYMBOL } from '../../assets/image/imgConst';
 import { forgotPasswordStyle } from "./forgotPasswordStyle";
 import { Actions } from 'react-native-router-flux';
 import { HMTextInput, HMButton } from '../Component/CommonComponent/commonComponent';
-
 
 export default class forgotPassword extends React.Component {
     render() {
@@ -35,14 +30,9 @@ export default class forgotPassword extends React.Component {
                     </View>
 
                     <HMTextInput
+                        shouldDisplayLeftImage={true}
                         placeholder={"Email"}
                         imageHolder={IMG_AT_SYMBOL} />
-
-                    <View style={forgotPasswordStyle.forgetPasswordContainer}>
-                        <TouchableOpacity style={forgotPasswordStyle.forgetPasswordButtonStyle}>
-                            <Text style={forgotPasswordStyle.forgetPasswordTextStyle}>Forgot Password?</Text>
-                        </TouchableOpacity>
-                    </View>
 
                     <HMButton
                         title={"SEND EMAIL"}

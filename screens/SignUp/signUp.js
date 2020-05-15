@@ -30,23 +30,27 @@ export default class signup extends React.Component {
           </View>
 
           <HMTextInput
+            shouldDisplayLeftImage={true}
             placeholder={"First Name"}
             imageHolder={IMG_USER} />
 
           <View style={signUpStyle.textInputContainer}>
             <HMTextInput
+              shouldDisplayLeftImage={true}
               placeholder={"Last Name"}
               imageHolder={IMG_USER} />
           </View>
 
           <View style={signUpStyle.textInputContainer}>
             <HMTextInput
+              shouldDisplayLeftImage={true}
               placeholder={"Email"}
               imageHolder={IMG_AT_SYMBOL} />
           </View>
 
           <View style={signUpStyle.textInputContainer}>
             <HMTextInput
+              shouldDisplayLeftImage={true}
               secureText={true}
               placeholder={"Password"}
               imageHolder={IMG_LOCK} />

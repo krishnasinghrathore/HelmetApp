@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { FORGOT_PASSWORD_BACKGROUND, TEXT_SEPARATOR_STYLE, TEXT_INPUT_SEPARATOR_STYLE, SIGN_UP_TEXT_COLOR, TEXT_INPUT_SEPARATOR_COLOR, FORGET_PASSWORD_TEXT_COLOR, WHITE_TEXT_COLOR, LOCHINVAR_COLOR } from "../../assets/app-color";
+import { TEXT_INPUT_SEPARATOR_COLOR, WHITE_TEXT_COLOR, BACKGROUND_COLOR_BLACK_MAT } from "../../assets/app-color";
 
 export const forgotPasswordStyle = StyleSheet.create({
     inputContainerStyle: {
@@ -30,7 +30,7 @@ export const forgotPasswordStyle = StyleSheet.create({
     container: {
         height: "100%",
         flex: 1,
-        backgroundColor: FORGOTPASSWORD_BACKGROUND
+        backgroundColor: BACKGROUND_COLOR_BLACK_MAT
     },
     scrollContainer: {
         flex: 1,

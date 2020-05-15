@@ -15,15 +15,15 @@ import {
     Text,
 } from 'react-native';
 import { HMTextInputStyle } from "./commonComponentStyle";
-import { IMG_USER, IMG_EYE_SHOW, IMG_ARROW } from '../../../assets/image/imgConst';
+import { IMG_USER, IMG_EYE_SHOW, IMG_ARROW, IMG_RADIO_BUTTON_SELECTED } from '../../../assets/image/imgConst';
 
 export const HMTextInput = (props) => {
     return (
         <View style={HMTextInputStyle.inputContainerStyle}>
             <View style={HMTextInputStyle.textInputStyle}>
-                <Image style={HMTextInputStyle.emailLogoStyle}
+                {props.shouldDisplayLeftImage && <Image style={HMTextInputStyle.emailLogoStyle}
                     resizeMode="contain"
-                    source={props.imageHolder || IMG_USER} />
+                    source={props.imageHolder || IMG_USER} />}
                 <TextInput
                     secureTextEntry={props.secureText || false}
                     style={HMTextInputStyle.textInputStyle}
@@ -49,5 +49,16 @@ export const HMButton = (props) => {
                 {props.displayImage && <Image source={IMG_ARROW} style={HMTextInputStyle.arrowImageStyle} />}
             </TouchableOpacity>
         </View>
+    );
+}
+
+export const HMRadioButton = (props) => {
+    return (
+        <View style={props.customContainerStyle || HMTextInputStyle.radioComponentCustomStyle}>
+            <TouchableOpacity style={HMTextInputStyle.radioImgContainerStyle || props.customImageViewContainerStyle}>
+                <Image style={HMTextInputStyle.radioImageStyle || props.customImageStyle} source={props.imageName || IMG_RADIO_BUTTON_SELECTED}></Image>
+            </TouchableOpacity>
+            <Text style={HMTextInputStyle.radioTitleStyle || props.customTextStyle}>{props.title}</Text>
+        </View >
     );
 }

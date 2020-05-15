@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { LOGIN_BACKGROUND, TEXT_SEPARATOR_STYLE, TEXT_INPUT_SEPARATOR_STYLE, SIGN_UP_TEXT_COLOR, TEXT_INPUT_SEPARATOR_COLOR, FORGET_PASSWORD_TEXT_COLOR, WHITE_TEXT_COLOR, LOCHINVAR_COLOR } from "../../assets/app-color";
+import { BACKGROUND_COLOR_BLACK_MAT, TEXT_SEPARATOR_STYLE, TEXT_INPUT_SEPARATOR_STYLE, SIGN_UP_TEXT_COLOR, TEXT_INPUT_SEPARATOR_COLOR, FORGET_PASSWORD_TEXT_COLOR, WHITE_TEXT_COLOR, LOCHINVAR_COLOR } from "../../assets/app-color";
 
 export const homeStyle = StyleSheet.create({
     arrowImageStyle: {
@@ -83,7 +83,7 @@ export const homeStyle = StyleSheet.create({
     container: {
         top: 0,
         flex: 1,
-        backgroundColor: LOGIN_BACKGROUND
+        backgroundColor: BACKGROUND_COLOR_BLACK_MAT
     },
     scrollContainer: {
         flex: 1,
@@ -96,5 +96,33 @@ export const homeStyle = StyleSheet.create({
     imageView: {
         flex: 1,
     },
+    addButtonContainerStyle: {
+        alignSelf: "flex-end",
+        marginBottom: 20,
+        marginRight: 20
+    },
+    listItemContainerStyle: {
+        flex: 1,
+        margin: 10,
+        height: 50,
+        justifyContent: "center"
+    },
+    listItemStyle: {
+        flex: 1,
+        justifyContent: "space-between",
+        alignItems: "center",
+        flexDirection: 'row'
+    },
+    itemTextStyle: {
+        color: "white",
+        fontSize: 18
+    },
+    numberStyle: {
+        alignSelf: "center"
+    },
+    separatoryStyle: {
+        height: 1, width: "100%",
+        backgroundColor: TEXT_INPUT_SEPARATOR_COLOR
+    }
 });
 
