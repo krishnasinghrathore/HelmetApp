@@ -41,11 +41,11 @@ export const HMTextInput = (props) => {
 
 export const HMButton = (props) => {
     return (
-        <View style={HMTextInputStyle.signUpContainerStyle}>
+        <View style={HMTextInputStyle.buttonMainContainerStyle}>
             <TouchableOpacity
-                style={HMTextInputStyle.signUpButtonTextContainer}
+                style={HMTextInputStyle.buttonTextContainerStyle}
                 onPress={props.onPress}>
-                <Text style={HMTextInputStyle.signUpButtonText}>{props.title}</Text>
+                <Text style={HMTextInputStyle.buttonTextStyle}>{props.title}</Text>
                 {props.displayImage && <Image source={IMG_ARROW} style={HMTextInputStyle.arrowImageStyle} />}
             </TouchableOpacity>
         </View>

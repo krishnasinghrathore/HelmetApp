@@ -43,7 +43,7 @@ export const HMTextInputStyle = StyleSheet.create({
     imageView: {
         flex: 1,
     },
-    signUpContainerStyle: {
+    buttonMainContainerStyle: {
         height: 40,
         borderRadius: 20,
         backgroundColor: LOCHINVAR_COLOR,
@@ -51,12 +51,12 @@ export const HMTextInputStyle = StyleSheet.create({
         marginRight: 20,
         marginTop: 40,
     },
-    signUpButtonTextContainer: {
+    buttonTextContainerStyle: {
         flex: 1,
         flexDirection: "row",
         justifyContent: "center"
     },
-    signUpButtonText: {
+    buttonTextStyle: {
         alignSelf: "center",
         fontSize: 18,
         color: WHITE_TEXT_COLOR,

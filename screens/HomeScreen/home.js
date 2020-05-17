@@ -12,11 +12,11 @@ import {
     Text,
     Image,
     FlatList,
+    TouchableOpacity,
 } from 'react-native';
 import { IMG_NUMBER1, IMG_ADD } from '../../assets/image/imgConst';
 import { homeStyle } from "./homeStyle";
 import { TEXT_INPUT_SEPARATOR_COLOR } from '../../assets/app-color';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 import { Actions } from 'react-native-router-flux';
 export default class home extends React.Component {
     constructor(props) {
@@ -58,13 +58,15 @@ export default class home extends React.Component {
 
     renderList(item) {
         return (
-            <View style={homeStyle.listItemContainerStyle}>
+            <TouchableOpacity style={homeStyle.listItemContainerStyle}
+                onPress={() => Actions.unlockDevice()}
+            >
                 <View style={homeStyle.listItemStyle}>
                     <Text style={homeStyle.itemTextStyle}>{item.title}</Text>
                     <Image style={homeStyle.numberStyle} source={IMG_NUMBER1} />
                 </View>
                 <View style={homeStyle.separatorStyle}></View>
-            </View>
+            </TouchableOpacity>
         );
     }
 
@@ -78,7 +80,7 @@ export default class home extends React.Component {
                 />
                 <TouchableOpacity
                     style={homeStyle.addButtonContainerStyle}
-                    onPress={() => Actions.addTask()}
+                    onPress={() => Actions.addDevice()}
                 >
                     <Image source={IMG_ADD} />
                 </TouchableOpacity>

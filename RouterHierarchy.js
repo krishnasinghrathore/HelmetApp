@@ -16,7 +16,8 @@ import signup from './screens/SignUp/signUp';
 import { BACKGROUND_COLOR_BLACK_MAT, WHITE_TEXT_COLOR } from './assets/app-color';
 import home from './screens/HomeScreen/home';
 import forgotPassword from './screens/ForgotPassword/forgoPassword';
-import addTask from './screens/AddTask/addTask';
+import addDevices from './screens/AddTask/addDevices';
+import unlockDevice from './screens/UnlockDevice/unlockDevice';
 
 export default RouterComponent = () => {
   return (
@@ -27,8 +28,9 @@ export default RouterComponent = () => {
         <Scene key="login" component={login} hideNavBar={true} initial></Scene>
         <Scene key="signup" component={signup} title="Sign Up"></Scene>
         <Scene key="forgotPassword" component={forgotPassword} title="Forgot Password"></Scene>
-        <Scene key="home" component={home} title="All Tasks"></Scene>
-        <Scene key="addTask" component={addTask} title="Add Tasks"></Scene>
+        <Scene key="home" component={home} title="All Devices"></Scene>
+        <Scene key="addDevice" component={addDevices} title="Add Device"></Scene>
+        <Scene key="unlockDevice" component={unlockDevice} title="Unlock Device"></Scene>
       </Scene>
     </ Router >
   );
