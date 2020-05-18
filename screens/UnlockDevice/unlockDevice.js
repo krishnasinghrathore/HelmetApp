@@ -25,6 +25,12 @@ export default class unlockDevice extends React.Component {
                     onPress={() =>
                         Actions.pop()}
                 />
+                <HMButton
+                    title={"FORGET DEVICE"}
+                    displayImage={false}
+                    onPress={() =>
+                        Actions.pop()}
+                />
             </View>
         );
     }
